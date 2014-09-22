@@ -30,7 +30,26 @@
         <div id="rect"></div>
 
         <script>
-            // Your work goes here.
+        //I attempted the bonus but couldn't get it to work. My attempt is in the commented sections.
+            var myBox = document.getElementById('rect');
+myBox.classList.add('bordered');
+//var myChange = document.getElementByClass('lefty');
+  //myChange[0].style.backgroundColor = 'black';
+ 
+  var leftyClickHandler = function(e) {
+
+    if (e.currentTarget.classList.contains('lefty')) {
+        e.currentTarget.classList.remove('lefty');
+    } else {
+        e.currentTarget.classList.add('lefty');
+    }
+
+};
+  
+  
+  
+   myBox.addEventListener('click', leftyClickHandler);
+  //myChange.addEventListener('click', leftyClickHandler);
         </script>
 
     </body>
