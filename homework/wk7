@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+console.log('hello');
+$.ajax({
+    url: 'http://api.nytimes.com/svc/news/v3/content/all/arts.jsonp',
+    dataType: 'jsonp',
+    data: {
+        'api-key': '93d669e9f5b031ef719d7cef2929e179:2:69996831' ,
+        
+    },
+   
+    success: function(response) {
+        console.log('yay', response);//  Yippee :)
+    }
+});
+
+</script>
+</head>
+</html>
